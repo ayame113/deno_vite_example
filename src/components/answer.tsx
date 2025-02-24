@@ -13,8 +13,8 @@ export function Answer() {
   };
   const wrongAnswers = takeRandom(
     words
-      .toSpliced(currentQuestionIndex, 1)
-      .map((word, i) => ({ ...word, index: i })),
+      .map((word, i) => ({ ...word, index: i }))
+      .toSpliced(currentQuestionIndex, 1),
     3,
   );
   const answers = shuffled([correctAnswer, ...wrongAnswers]);
