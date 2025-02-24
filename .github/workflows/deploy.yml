@@ -40,5 +40,3 @@ jobs:
           project: "memorize-words-app"
           entrypoint: "jsr:@std/http/file-server"
           root: "dist"
-          
-          
